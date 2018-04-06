@@ -1,10 +1,12 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.6)  6 APR 2018 08:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.1.6)  6 APR 2018 09:55
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**\input ./main.tex
-(./main.tex (./llncs.cls
+**main.tex
+(./main.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(./llncs.cls
 Document Class: llncs 2015/06/24 v2.20 
  LaTeX document class for Lecture Notes in Computer Science
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -1237,12 +1239,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
  ) 
 Here is how much of TeX's memory you used:
  23201 strings out of 493304
- 513889 string characters out of 6139872
+ 513887 string characters out of 6139872
  715843 words of memory out of 5000000
  26121 multiletter control sequences out of 15000+600000
  13956 words of font info for 52 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
- 63i,19n,84p,1509b,2101s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,19n,84p,1500b,2101s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
