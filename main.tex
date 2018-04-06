@@ -246,13 +246,13 @@ DBpedia Abstracts
 ~\cite{abstracts2016}               &39,132  &-      &505,033 &\xmark &DE,EN,ES,FR, \\
                                     &        &       &        &       &IT,JA,NL \\\midrule
 MEANTIME \cite{meantime2016}        &120     &597    &2,790   &\xmark &EN,ES,IT,NL \\\midrule 
-VoxEL$_R$                           &15      &94     &674     &\cmark &DE,EN,ES,IT,FR\\\midrule  
-VoxEL$_S$                           &15      &94     &204     &\cmark &DE,EN,ES,IT,FR\\ 
+VoxEL$_R$                           &15      &94     &674     &\cmark &DE,EN,ES,FR,IT\\\midrule  
+VoxEL$_S$                           &15      &94     &204     &\cmark &DE,EN,ES,FR,IT\\ 
 \bottomrule
 \end{tabular}
 \end{table}
 
-From a brief inspection, we can see that the majority of datasets provide text in English only, the exceptions being as follows: 
+We can see that the majority of datasets provide text in one language only -- predominantly English -- with the exceptions being as follows: 
 
 \begin{description}
 \item[SemEval 2015 Task 13:] is built over a biomedical, math, computer and social domain and is designed to support EL and WSD at the same time, containing annotations to Wikipedia, BabelNet and WordNet~\cite{moro2015semeval}.
@@ -295,10 +295,10 @@ In summary, \textsc{VoxEL} thus consists of 15 news (documents) from the multili
 %============================================================================
 \section{Experiments}\label{sec:exp}
 
-We conduct some experiment in order to explore the behavior of state of the art EL systems in both version of the VoxEL dataset. In particular, we are interested in the following questions:
+We now use our proposed VoxEL dataset to conduct experiments in order to explore the behavior of state of the art EL systems for multilingual settings. In particular, we are interested in the following questions:
+
 \begin{itemize}
-\item \textbf{RQ1}: How does EL performance differ between the languages German, English, Spanish, French and Italian using VoxEL? 
-%\item \textbf{RQ_}: Do multilingual systems configured for a set of languages perform much better over VoxEL for these languages than monolingual systems not configured for them?
+\item \textbf{RQ1}: How does EL performance of state-of-the-art systems differ for the German, English, Spanish, French and Italian languages? 
 \item \textbf{RQ2}: Could automatic translation be used to achieve results similar to that achieved in the English language by monolingual systems applied to texts written in a language that does not have its configuration?
 \item \textbf{RQ3}: Taking into account that the systems obtain a better performance for English, could the automatic translation overcome the results of such systems for the other languages that support VoxEL?.
 \end{itemize}
