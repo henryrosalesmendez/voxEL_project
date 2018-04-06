@@ -1,0 +1,99 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{SDA-charton2011automatic}
+Charton, E., Gagnon, M., Ozell, B.: Automatic semantic web annotation of named
+  entities. In: Canadian Conference on Artificial Intelligence. pp. 74--85.
+  Springer (2011)
+
+\bibitem{daiber2013improving}
+Daiber, J., Jakob, M., Hokamp, C., Mendes, P.N.: Improving efficiency and
+  accuracy in multilingual entity extraction. In: I-SEMANTICS. pp. 121--124.
+  ACM (2013)
+
+\bibitem{THD-dojchinovski2012recognizing}
+Dojchinovski, M., Kliegr, T.: Recognizing, classifying and linking entities
+  with {W}ikipedia and {DB}pedia. WIKT pp. 41--44 (2012)
+
+\bibitem{fahrni2012hits}
+Fahrni, A., G{\"o}ckel, T., Strube, M.: {HITS'} monolingual and cross-lingual
+  entity linking system at {TAC} 2012: A joint approach. In: TAC. Citeseer
+  (2012)
+
+\bibitem{ferragina2010tagme}
+Ferragina, P., Scaiella, U.: Tagme: on-the-fly annotation of short text
+  fragments (by wikipedia entities). In: CIKM. pp. 1625--1628. ACM (2010)
+
+\bibitem{guo2012ualberta}
+Guo, Z., Xu, Y., de~S{\'a}~Mesquita, F., Barbosa, D., Kondrak, G.: ualberta at
+  {TAC-KBP} 2012: English and cross-lingual entity linking. In: TAC (2012)
+
+\bibitem{AIDA-hoffart2011robust}
+Hoffart, J., Yosef, M.A., Bordino, I., F{\"u}rstenau, H., Pinkal, M., Spaniol,
+  M., Taneva, B., Thater, S., Weikum, G.: Robust disambiguation of named
+  entities in text. In: EMNLP. pp. 782--792. ACL (2011)
+
+\bibitem{dbpedia-lehmann2015dbpedia}
+Lehmann, J., Isele, R., Jakob, M., Jentzsch, A., Kontokostas, D., Mendes, P.N.,
+  Hellmann, S., Morsey, M., Van~Kleef, P., Auer, S., et~al.: {DB}pedia--a
+  large-scale, multilingual knowledge base extracted from {W}ikipedia. Semantic
+  Web  6(2),  167--195 (2015)
+
+\bibitem{mendes2011dbpedia}
+Mendes, P.N., Jakob, M., Garc{\'\i}a-Silva, A., Bizer, C.: {DB}pedia spotlight:
+  shedding light on the web of documents. In: I-SEMANTICS. pp. 1--8. ACM (2011)
+
+\bibitem{moro2015semeval}
+Moro, A., Navigli, R.: {SemEval}-2015 {Task} 13: Multilingual all-words sense
+  disambiguation and entity linking. In: SemEval@ NAACL-HLT. pp. 288--297
+  (2015)
+
+\bibitem{Babelfy-moro2014entity}
+Moro, A., Raganato, A., Navigli, R.: Entity linking meets word sense
+  disambiguation: a unified approach. Trans. of the ACL  2,  231--244 (2014)
+
+\bibitem{FEL-pappu2017lightweight}
+Pappu, A., Blanco, R., Mehdad, Y., Stent, A., Thadani, K.: Lightweight
+  multilingual entity extraction and linking. In: WSDM. pp. 365--374. ACM
+  (2017)
+
+\bibitem{KIM-popov2004kim}
+Popov, B., Kiryakov, A., Ognyanoff, D., Manov, D., Kirilov, A.: Kim--a semantic
+  platform for information extraction and retrieval. Natural Language
+  Engineering  10(3-4),  375--392 (2004)
+
+\bibitem{Rosales-MendezP17}
+Rosales{-}M{\'{e}}ndez, H., Poblete, B., Hogan, A.: Multilingual entity
+  linking: Comparing english and spanish. In: International Workshop on Linked
+  Data for Information Extraction (LD4IE). pp. 62--73 (2017)
+
+\bibitem{Cross-Lingual-Wikifier-tsai2016cross}
+Tsai, C.T., Roth, D.: Cross-lingual wikification using multilingual embeddings.
+  In: NAACL-HLT. pp. 589--598 (2016)
+
+\bibitem{usbeck2014agdistis}
+Usbeck, R., Ngomo, A.C.N., R{\"o}der, M., Gerber, D., Coelho, S.A., Auer, S.,
+  Both, A.: {AGDISTIS}-graph-based disambiguation of named entities using
+  linked data. In: ISWC. pp. 457--471. Springer (2014)
+
+\bibitem{GERBIL_usbeck2015evaluating}
+Usbeck, R., R{\"o}der, M., Ngomo, A.C.N.: Evaluating entity annotators using
+  {GERBIL}. In: ESWC (Satellite Events). pp. 159--164 (2015)
+
+\bibitem{gerbil-2015}
+Usbeck, R., R{\"{o}}der, M., Ngomo, A.N., Baron, C., Both, A., Br{\"{u}}mmer,
+  M., Ceccarelli, D., Cornolti, M., Cherix, D., Eickmann, B., Ferragina, P.,
+  Lemke, C., Moro, A., Navigli, R., Piccinno, F., Rizzo, G., Sack, H., Speck,
+  R., Troncy, R., Waitelonis, J., Wesemann, L.: {GERBIL:} general entity
+  annotator benchmarking framework. In: WWW. pp. 1133--1143 (2015)
+
+\bibitem{Wikidata_vrandevcic2014wikidata}
+Vrande{\v{c}}i{\'c}, D., Kr{\"o}tzsch, M.: Wikidata: a free collaborative
+  knowledgebase. Communications of the ACM  57(10),  78--85 (2014)
+
+\bibitem{wang2013boosting}
+Wang, Z., Li, J., Tang, J.: Boosting cross-lingual knowledge linking via
+  concept annotation. In: IJCAI. pp. 2733--2739 (2013)
+
+\end{thebibliography}
