@@ -48,7 +48,7 @@
 
 \newcommand{\ah}[1]{{\color{blue}\textsc{ah:} #1}}
 
-\usepackage{soul} %underline
+\usepackage{soul} %middleline
 \usepackage{pgfplots}
 \begin{document}
 
@@ -137,50 +137,48 @@ Here we thus focus on EL systems that have published evaluation results over tex
 
 \begin{table}[t]
 	\centering
-	\caption{Overview of multilingual EL approaches; the italicized approaches will be incorporated as part of our experiments}
+	\caption{Overview of multilingual EL approaches; the italicized approaches will be incorporated as part of our experiments.}
 	\label{tab:multilingual_approaches}
 	\setlength{\tabcolsep}{3pt}
-	\begin{tabular}{lccccr}
+	\begin{tabular}{lcccccr}
 		\toprule
-		\textbf{Name} &  \textbf{Year} & \textbf{Evaluated Languages} & \textbf{Demo} & \textbf{Src} & \textbf{API}\\ \midrule
+		\textbf{Name} &  \textbf{Year} & \textbf{Evaluated Languages} & \textbf{ER} & \textbf{Demo} & \textbf{Src} & \textbf{API}\\ \midrule
 		
-		KIM \cite{KIM-popov2004kim} & 2004 &English, French, Spanish&\cmark&\xmark&\cmark\\\midrule
+		KIM \cite{KIM-popov2004kim} & 2004 &EN, FR, ES&\cmark&\cmark&\xmark&\cmark\\\midrule
         
-        \textit{TagME} \cite{ferragina2010tagme} & 2010 & English, German, Dutch &\cmark&\xmark&\cmark\\\midrule
+        \textit{TagME} \cite{ferragina2010tagme} & 2010 & DE, EN, NL &\cmark&\cmark&\xmark&\cmark\\\midrule
 		
-		SDA \cite{SDA-charton2011automatic}  & 2011 &English, French&\xmark&\xmark&\xmark\\\midrule
+		SDA \cite{SDA-charton2011automatic} & 2011 &EN, FR&\cmark&\xmark&\xmark&\xmark\\\midrule
 		
-		ualberta \cite{guo2012ualberta}& 2012 &English, Chinese&\xmark&\xmark&\xmark\\\midrule
+		ualberta \cite{guo2012ualberta}& 2012 &EN, ZH&\cmark&\xmark&\xmark&\xmark\\\midrule
 		
-		HITS \cite{fahrni2012hits} & 2012 & English, Spanish, Chinese&\xmark&\xmark&\xmark\\\midrule
+		HITS \cite{fahrni2012hits} & 2012 & EN, ES, ZH&\cmark&\xmark&\xmark&\xmark\\\midrule
 		
-		\textit{THD} \cite{THD-dojchinovski2012recognizing}  & 2012 &English, German, Dutch&\cmark&\cmark&\cmark\\\midrule 
+		\textit{THD} \cite{THD-dojchinovski2012recognizing}  & 2012 &DE, EN, NL&\cmark&\cmark&\cmark&\cmark\\\midrule 
 		
-		\textit{DBpedia Spotlight} \cite{mendes2011dbpedia,daiber2013improving} & 2013  &English, Italian, Russian,&\cmark&\cmark&\cmark\\
-		& &Dutch, French, German,&&&\\
-		& &Spanish, Hungarian, Danish&&&\\\midrule
+		\textit{DBpedia Spotlight} \cite{mendes2011dbpedia,daiber2013improving} & 2013  &DA, DE, EN, ES, FR,&\cmark&\cmark&\cmark&\cmark\\
+		& &HU, IT, NL, RU&&&\\\midrule
 		
-		Wang-Tang \cite{wang2013boosting} & 2013 & English, Chinese&\xmark&\xmark&\xmark\\\midrule
+		Wang-Tang \cite{wang2013boosting} & 2013 & EN, ZH&\cmark&\xmark&\xmark&\xmark\\\midrule
+        
+        AGDISTIS \cite{usbeck2014agdistis}& 2014 & DE, EN&\xmark&\cmark&\cmark&\cmark\\\midrule
 		
-		\textit{AGDISTIS} \cite{usbeck2014agdistis,mag2017}& 2014 & English, German, Spanish&\cmark&\cmark&\cmark\\
-		& &French, Italian, Japanese,&&&\\
-		& &Dutch&&&\\\midrule
+		\textit{Babelfy} \cite{Babelfy-moro2014entity}& 2014 &DE, EN, ES, FR, IT &\cmark&\cmark&\xmark&\cmark\\\midrule
 		
-		\textit{Babelfy} \cite{Babelfy-moro2014entity}& 2014 &English, Spanish, French &\cmark&\xmark&\cmark\\
-		& &German, Italian&&&\\\midrule
-		
-		\textit{FREME}~\cite{freme-ner2016}&2016&English, German&\xmark&\cmark&\cmark\\\midrule
+		\textit{FREME}~\cite{freme-ner2016}&2016&DE, EN&\cmark&\xmark&\cmark&\cmark\\\midrule
 		%& &French, Spanish, Russian&&&\\\midrule
 		
-		WikiME \cite{Cross-Lingual-Wikifier-tsai2016cross} & 2016 & English, Spanish, French,&\cmark&\xmark&\xmark\\
-		& &Italian, Chinese, German,&&&\\
-		& &Thai, Arabic, Turkish,&&&\\
-		& &Tamil, Tagalog, Urdu, Hebrew&&&\\\midrule		
+		WikiME \cite{Cross-Lingual-Wikifier-tsai2016cross} & 2016 & AR, DE, EN, ES, FR,&\cmark&\cmark&\xmark&\xmark\\
+		& &HE, IT, TA, TH, TL,&&&\\
+		& &TR, UR, ZH&&&\\\midrule		
 		
-		FEL~\cite{FEL-pappu2017lightweight}& 2017 &English, Spanish, Chinese&\xmark&\cmark&\xmark\\\midrule
-		
-		FOX~\cite{fox2017}&2017&English, German, Spanish,&\cmark&\cmark&\cmark\\
-		& & French, Dutch &&&\\
+		FEL~\cite{FEL-pappu2017lightweight}& 2017 &EN, ES, ZH&\cmark&\xmark&\cmark&\xmark\\\midrule
+        
+		FOX~\cite{fox2017}&2017&DE, EN, ES, FR, NL&\cmark&\cmark&\cmark&\cmark\\\midrule
+		%& & French, Dutch &&&\\
+        
+        MAG \cite{mag2017}& 2017 & DE, EN, ES, FR,&\xmark&\cmark&\cmark&\cmark\\
+		& & IT, JA,NL&&&\\
 		
 		%&2016&IDIOMAS&\cmark&\cmark&\cmark\\
 		%& & French, Dutch &&&\\
@@ -194,13 +192,13 @@ We will later conduct experiments using the GERBIL evaluation framework~\cite{ge
 \item[TagME (2010)] uses analyses of anchor texts in Wikipedia pages to perform EL~\cite{ferragina2010tagme}. The ranking stage is based primarily on two measures: \textit{commonness}, which describes how often an anchor text is associated with a particular Wikipedia entity; and \textit{relatedness}, which is a co-citation measure indicating how frequently candidate entities for different mentions are linked from the same Wikipedia article. TagME is language agnostic: it can take advantage of the Wikipedia Search API to apply the same conceptual process over different language versions of Wikipedia to support multilingual EL.
 \item[THD (2012)] is based on three measures~\cite{THD-dojchinovski2012recognizing}: \textit{most frequent senses}, which ranks candidates for a mention based on the Wikipedia Search API results for that mention; \textit{co-occurrence}, which is a co-citation measure looking at how often candidate entities for different mentions are linked from the same paragraphs in Wikipedia; and \textit{explicit semantic analysis}, which uses keyword similarity measures to relate mentions with a concept. These methods are language agnostic and applicable to different language versions of Wikipedia.
 \item[DBpedia Spotlight (2013)] was first proposed to deal with English annotations~\cite{mendes2011dbpedia}, based on keyword and string matching functions ranked by a probabilistic model based on a variant of a TF--IDF measure. DBpedia Spotlight is largely language-agnostic, where an extended version later proposed by Daiber et al.~\cite{daiber2013improving} leverages the multilingual information of the Wikipedia and DBpedia KBs to support multiple languages.
-\item[AGDISTIS (2014)] assumes that recognition has been performed using another tool and thus, given a set of mentions, focuses on the disambiguation process~\cite{usbeck2014agdistis}. The generation of candidates is mainly performed over indexes computed off-line from the target KB, where the ranking stage computes an assignment of links from related entities in a graph built over neighbouring candidate entities and mentions. A recent study \cite{mag2017} extends this approach, adding some new features to improve its behavior in multilingual scenarios. 
+\item[\textcolor{red}{\st{AGDISTIS (2014)}}] \textcolor{red}{\st{assumes that recognition has been performed using another tool and thus, given a set of mentions, focuses on the disambiguation process}}~\cite{usbeck2014agdistis}. \textcolor{red}{\st{The generation of candidates is mainly performed over indexes computed off-line from the target KB, where the ranking stage computes an assignment of links from related entities in a graph built over neighbouring candidate entities and mentions. A recent study}} \cite{mag2017} \textcolor{red}{\st{extends this approach, adding some new features to improve its behavior in multilingual scenarios.}} 
 \item[Babelfy (2014)] performs EL with respect to a custom multilingual KB BabelNet~\footnote{\url{http://babelnet.org/}; April 1st, 2018} constructed from Wikipedia and WordNet, using machine translation to bridge the gaps in information available for different language versions of Wikipedia~\cite{Babelfy-moro2014entity}. Recognition is based on POS tagging for different languages, selecting candidate entities by string matching. Ranking is reduced to finding the densest subgraph that relates neighbouring entities and mentions.
 \item[FREME (2016)] delegates the recognition of entities to the Stanford-NER tool, which is trained over the anchor texts of Wikipedia corpora in different languages. Candidate entities are generated by keyword search over local indexes, which are then ranked based on the number of matching anchor texts in Wikipedia linking to the corresponding article of the candidate entity~\cite{freme-ner2016}.
 %\item[WikiME (2016)] uses a model based on word embedding, which includes a final step for each foreign language embeddings of projection to the English one.
 \end{description}
 
-With respect to FOX, note that while it meets all of our criteria, at the time or writing, we did not succeed in getting the API to run over VoxEL without error; hence we do not include this system.
+With respect to FOX, note that while it meets all of our criteria, at the time or writing, we did not succeed in getting the API to run over VoxEL without error; hence we do not include this system. \textcolor{blue}{We also leave AGDISTIS and MAG out of our selection because they do not perform the ER phase, requiring a prior identification of the entities in the input text.}
 
 
 
@@ -246,8 +244,8 @@ DBpedia Abstracts
 ~\cite{abstracts2016}               &39,132  &-      &505,033 &\xmark &DE,EN,ES,FR, \\
                                     &        &       &        &       &IT,JA,NL \\\midrule
 MEANTIME \cite{meantime2016}        &120     &597    &2,790   &\xmark &EN,ES,IT,NL \\\midrule 
-VoxEL$_R$                           &15      &94     &674     &\cmark &DE,EN,ES,FR,IT\\\midrule  
-VoxEL$_S$                           &15      &94     &204     &\cmark &DE,EN,ES,FR,IT\\ 
+VoxEL$_R$                           &15      &94     &\textcolor{blue}{635}     &\cmark &DE,EN,ES,FR,IT\\\midrule  
+VoxEL$_S$                           &15      &94     &\textcolor{blue}{237}     &\cmark &DE,EN,ES,FR,IT\\ 
 \bottomrule
 \end{tabular}
 \end{table}
@@ -280,15 +278,15 @@ Unlike DBpedia Abstracts, the SemEval and MEANTIME datasets contain analogous do
 
 In this section, we describe the \textsc{VoxEL} Dataset that we propose as a gold standard for EL involving five languages: German, English, Spanish, French and Italian. \textsc{VoxEL} is based on 15 news articles sourced from the VoxEurop\footnote{\url{http://www.voxeurop.eu/}; April 1st, 2018} web-site: a European newsletter with the same news articles professionally translated to different languages. This source of text thus obviates the need for translation of texts to different languages, and facilitates the consistent identification and annotation of mentions (and their Wikipedia links) across languages. With VoxEL, we thus provide a high-quality resource with which to evaluate the behavior of EL systems across a variety of European languages. 
 
-While the VoxEurop newsletter is a valuable source of professionally translated text in several European languages, there are sometimes natural variations across languages that -- although they preserve meaning -- may change how the entities are mentioned. A common example is the use of pronouns rather than repeating a person's name to make the text more readable in a given language. Such variations would then lead to different entity annotations across languages, hindering comparability. Hence, in order to achieve the same number of sentences and annotations for each new (document), we applied small manual edits to homogenize the text (e.g., replacing a pronoun by a person's name). On the other hand, sentences that introduce new entities in one particular language, or that deviate too significantly across all languages, are eliminated.
+While the VoxEurop newsletter is a valuable source of professionally translated text in several European languages, there are sometimes natural variations across languages that -- although they preserve meaning -- may change how the entities are mentioned. A common example is the use of pronouns rather than repeating a person's name to make the text more readable in a given language. Such variations would then lead to different entity annotations across languages, hindering comparability. Hence, in order to achieve the same number of sentences and annotations for each new (document), we applied small manual edits to homogenize the text (e.g., replacing a pronoun by a person's name). On the other hand, sentences that introduce new entities in one particular language, or that deviate too significantly across all languages, are eliminated. \textcolor{blue}{Less than 10\% of the sentences from the original source were eliminated.}
 
-With respect to the guidelines for labeled entity mentions, we take into consideration the lack of consensus about what is an ``\textit{entity}''~\cite{usa_Gerbil_jha2017all,LingSW15}: some works conservatively consider only mentions of entities referring to fixed types such as person, organization and location as entities (similar to the traditional NER/TAC consensus on an entity), while other authors note that a much more diverse set of entities are available in Wikipedia and related KBs for linking, and thus consider any noun-phrase mentioning an entity in Wikipedia to be a valid target for linking~\cite{PereraMAST16}. Furthermore, there is a lack of consensus on how overlapping entities -- like \textit{New York City Fire Department} -- should be treated~\cite{usa_Gerbil_jha2017all,LingSW15}; should \textit{New York City} be annotated as a separate entity or should we only cover maximal entities? Rather than take a stance on such questions -- which appear application dependant -- we instead create two versions of the data: a \textit{strict} version that considers only maximal entity mentions referring to persons, organizations and locations; and a \textit{relaxed} version that considers any noun phrase mentioning a Wikipedia entity as a mention, including overlapping mentions where applicable. For example, in the sentence \textit{``The European Central Bank released new inflation figures today''} the strict version would only include ``\textit{European Central Bank}'', while the relaxed version would also include ``\textit{Central Bank}'' and ``\textit{inflation}''.
+With respect to the guidelines for labeled entity mentions, we take into consideration the lack of consensus about what is an ``\textit{entity}''~\cite{usa_Gerbil_jha2017all,LingSW15,ourAMW2018}: some works conservatively consider only mentions of entities referring to fixed types such as person, organization and location as entities (similar to the traditional NER/TAC consensus on an entity), while other authors note that a much more diverse set of entities are available in Wikipedia and related KBs for linking, and thus consider any noun-phrase mentioning an entity in Wikipedia to be a valid target for linking~\cite{PereraMAST16}. Furthermore, there is a lack of consensus on how overlapping entities -- like \textit{New York City Fire Department} -- should be treated~\cite{usa_Gerbil_jha2017all,LingSW15}; should \textit{New York City} be annotated as a separate entity or should we only cover maximal entities? Rather than take a stance on such questions -- which appear application dependant -- we instead create two versions of the data: a \textit{strict} version that considers only maximal entity mentions referring to persons, organizations and locations; and a \textit{relaxed} version that considers any noun phrase mentioning a Wikipedia entity as a mention, including overlapping mentions where applicable. For example, in the sentence \textit{``The European Central Bank released new inflation figures today''} the strict version would only include ``\textit{European Central Bank}'', while the relaxed version would also include ``\textit{Central Bank}'' and ``\textit{inflation}''.
 
 %Taking into consideration the lack of consensus about \textit{``what is an entity?''} we propose handle two points of view of the annotations for the same input text. First, a \textit{relaxed} version that includes any Wikipedia page that is not disambiguation or redirection. Second, a \textit{strict} version that points only to irrefutable Wikipedia entities, and that are person, organization or place. Thus we can measure the behavior of systems according to its application domain. Some systems have a general purpose and allow us to adapt to the application domain, for instance, DBpedia Spotlight allow us to specify the confidence and support parameters with use to decide which entity links. Although these two parameters allow adjustment to the context, they should be calibrated each time it changes. An idea closer to our objective is the behavior of Babelfy, which allows us to specify if we want to annotate only entities, or if we allow the inclusion of concepts.
 
-To create the annotation of mentions with corresponding KB identifiers, we implemented a Web tool\footnote{\url{https://users.dcc.uchile.cl/~hrosales/NIFify.html}} that allows a user annotate a text, producing output in the popular NLP Interchange Format (NIF)~\cite{HellmannLAB13}, as well as offering visualizations of the annotations that facilitate, e.g., revision. For each language, we provide annotated links that target the English Wikipedia entry, as well the language version of Wikipedia (if different from English). In case there was no appropriate Wikipedia entry for a mention of a person, organization or place, we annotate the mention with a \url{NotInLexicon} marker.
+To create the annotation of mentions with corresponding KB identifiers, we implemented a Web tool\footnote{\url{https://github.com/henryrosalesmendez/NIFify}; April 1st, 2018} that allows a user annotate a text, producing output in the popular NLP Interchange Format (NIF)~\cite{HellmannLAB13}, as well as offering visualizations of the annotations that facilitate, e.g., revision. For each language, we provide annotated links that target the English Wikipedia entry, as well the language version of Wikipedia (if different from English). In case there was no appropriate Wikipedia entry for a mention of a person, organization or place, we annotate the mention with a \url{NotInLexicon} marker.
 
-In summary, \textsc{VoxEL} thus consists of 15 news (documents) from the multilingual newsletter VoxEurop, totaling 94 sentences. This text is annotated times five for each language, and times two for the strict and relaxed versions, giving a total of 150 annotated documents and 940 sentences. The same number of annotations is given for each language (including by sentence). For the strict version, each language has 204 annotated mentions, while for the relaxed version, each language has 674 annotated mentions. Again, this homogeneity of text and annotations across languages was non-trivial to achieve, but facilitates comparison of evaluation results not only across systems, but across languages. For comparison, the SemEval dataset has 758, 768 and 784 annotations in the English, Spanish and Italian texts respectively, while MEANTIME has 2790, 2729, 2709 and 2704 mentions in the English, Dutch, Italian and Spanish texts.
+In summary, \textsc{VoxEL} thus consists of 15 news (documents) from the multilingual newsletter VoxEurop, totaling 94 sentences. This text is annotated five times for each language, and two times for the strict and relaxed versions, giving a total of 150 annotated documents and 940 sentences. The same number of annotations is given for each language (including by sentence). For the strict version, each language has \textcolor{red}{\st{204}} \textcolor{blue}{237} annotated mentions, while for the relaxed version, each language has \textcolor{red}{\st{674}} \textcolor{blue}{635} annotated mentions. \textcolor{blue}{In the relaxed version, 6.2\%, 10.8\%, 20.3\% and 62.7\% of the entries correspond to persons, organizations, places and others respectively, while in the strict version the entities that fall in the first three classes representing a 16.9\%, 28.7\% and 54.4\%.} Again, this homogeneity of text and annotations across languages was non-trivial to achieve, but facilitates comparison of evaluation results not only across systems, but across languages. For comparison, the SemEval dataset has 758, 768 and 784 annotations in the English, Spanish and Italian texts respectively, while MEANTIME has 2790, 2729, 2709 and 2704 mentions in the English, Dutch, Italian and Spanish texts.
 
 %============================================================================
 \section{Experiments}\label{sec:exp}
@@ -301,7 +299,7 @@ We now use our proposed \textsc{VoxEL} dataset to conduct experiments in order t
 \item \textbf{RQ3}: How would a method based on machine translation to English compare with directly configuring the system for a particular language?
 \end{itemize}
 
-In order to address \textbf{RQ1} and \textbf{RQ2}, we ran the multilingual EL systems Babelfy, AGDISTIS, DBpedia Spotlight, FREME, TagME and THD over both versions of VoxEL in all languages. These experiments were conducted with the GERBIL~\cite{gerbil-2015} EL evaluation framework, which provides unified access to the public APIs of multiple EL tools, abstracting different input and output formats using the NIF vocabulary, allowing to apply standard metrics to measure the performance of results with respect to a labeled dataset. Note that we had to slightly modify GERBIL to be able to configure the available EL systems for different languages; previously it would only support English configurations. GERBIL uses these systems via their REST APIs maintaining default (non-language) parameters, except for the case of Babelfy, for which we analyze two configurations: one that applies a more liberal interpretation of entities to include conceptual entities (Babelfy$_R$), and another configuration that applies a stricter definition of entities (Babelfy$_S$), where the two configurations correspond loosely with the relaxed/strict versions of our dataset.
+In order to address \textbf{RQ1} and \textbf{RQ2}, we ran the multilingual EL systems Babelfy, \textcolor{red}{\st{AGDISTIS}}, DBpedia Spotlight, FREME, TagME and THD over both versions of VoxEL in all languages. These experiments were conducted with the GERBIL~\cite{gerbil-2015} EL evaluation framework, which provides unified access to the public APIs of multiple EL tools, abstracting different input and output formats using the NIF vocabulary, allowing to apply standard metrics to measure the performance of results with respect to a labeled dataset. Note that we had to slightly modify GERBIL to be able to configure the available EL systems for different languages; previously it would only support English configurations. GERBIL uses these systems via their REST APIs maintaining default (non-language) parameters, except for the case of Babelfy, for which we analyze two configurations: one that applies a more liberal interpretation of entities to include conceptual entities (Babelfy$_R$), and another configuration that applies a stricter definition of entities (Babelfy$_S$), where the two configurations correspond loosely with the relaxed/strict versions of our dataset.
 
 
 % best language
@@ -325,14 +323,14 @@ In order to address \textbf{RQ1} and \textbf{RQ2}, we ran the multilingual EL sy
 			Babelfy$_S$ &$mR$& \bl{0.461}& 0.219 & 0.210 & 0.200 & 0.192 & 0.558 & 0.524 & \bl{0.593} & 0.563 & 0.583 \\
 			&$mF$& 0.301& 0.336 & \bl{0.342} & 0.328 & 0.316 & 0.701 & 0.638 & \bl{0.722} & 0.697 & 0.706 \\\midrule
 			&$mP$& 0.313& 0.348 & 0.437 & 0.282 & \bl{0.512} & 0.568 & \bl{0.779} & 0.549 & 0.475 & 0.725 \\
-			AGDISTIS    &$mR$& 0.237& 0.265 & 0.329 & 0.210 & \bl{0.397} & 0.568 & \bl{0.779} & 0.549 & 0.475 & 0.725 \\
-			&$mF$& 0.270 & 0.301 & 0.376 & 0.241 & \bl{0.447} & 0.568 & \bl{0.779} & 0.549 & 0.475 & 0.725 \\\midrule
-			&$mP$& 0.731& \bl{0.745} & 0.691 & 0.658 & 0.682 & 0.781 & \bl{0.854} & 0.690 & 0.691 & 0.800  \\
+			%AGDISTIS    &$mR$& 0.237& 0.265 & 0.329 & 0.210 & \bl{0.397} & 0.568 & \bl{0.779} & 0.549 & 0.475 & 0.725 \\
+			%&$mF$& 0.270 & 0.301 & 0.376 & 0.241 & \bl{0.447} & 0.568 & \bl{0.779} & 0.549 & 0.475 & 0.725 \\\midrule
+			%&$mP$& 0.731& \bl{0.745} & 0.691 & 0.658 & 0.682 & 0.781 & \bl{0.854} & 0.690 & 0.691 & 0.800  \\
 			DBspot      &$mR$& 0.508& \bl{0.577} & 0.399 & 0.360 & 0.488 & 0.544 & \bl{0.602} & 0.382 & 0.406 & 0.549  \\
 			&$mF$& 0.600& \bl{0.650} & 0.506 & 0.466 & 0.569 & 0.641 & \bl{0.706} & 0.492 & 0.512 & 0.651 \\\midrule
-			&$mP$& $err$& \bl{0.781} & $err$ & $err$ & $err$ & $err$ & \bl{0.872} & $err$ & $err$ & $err$  \\
-			FREME       &$mR$& $err$& \bl{0.370} & $err$ & $err$ & $err$ & $err$ & \bl{0.402} & $err$ & $err$ & $err$  \\
-			&$mF$& $err$& \bl{0.503} & $err$ & $err$ & $err$ & $err$ & \bl{0.550} & $err$ & $err$ & $err$ \\\midrule
+			            &$mP$& 0.762 & 0.803 & 0.655 & 0.737 & \bl{0.857}&~ 0.750 & \bl{0.871}& 0.660 & 0.739 & 0.858  \\
+			FREME       &$mR$& 0.161 & \bl{0.267}& 0.175 & 0.129 & 0.213 &~ 0.426 & \bl{0.764}& 0.553 & 0.416 & 0.652  \\
+			            &$mF$& 0.266 & \bl{0.400}& 0.276 & 0.219 & 0.342 &~ 0.543 & \bl{0.814}& 0.602 & 0.532 & 0.740 \\\midrule
 			&$mP$& 0.635& \bl{0.754} & --    & --    & 0.494 & 0.875 & \bl{0.946} & --    & --    & 0.742  \\
 			TagME       &$mR$& 0.232& \bl{0.488} & --    & --    & 0.182 & 0.652 & \bl{0.784} & --    & --    & 0.509  \\
 			&$mF$& 0.340& \bl{0.592} & --    & --    & 0.266 & 0.747 & \bl{0.857} & --    & --    & 0.604 \\\midrule
@@ -345,9 +343,9 @@ In order to address \textbf{RQ1} and \textbf{RQ2}, we ran the multilingual EL sy
 
 The results of these experiments are shown in Table~\ref{tab:gerbil}, where we present micro-measures for Precision ($mP$), Recall ($mR$) and $F_1$ ($mF$), with all systems, for all languages, in both versions of the dataset.\footnote{The GERBIL results are available at \url{https://users.dcc.uchile.cl/~hrosales/ISWC2018_experiment_GERBIL.html}} From first impressions, we can observe that two systems -- TagME and THD -- do not support all languages, where we leave the corresponding results blank. On the other hand, the API for FREME threw exceptions when set for languages other than English.
 
-With respect to \textbf{RQ1}, for the Relaxed version, the highest $F_1$ scores are obtained by Babelfy$_R$ (0.662: ES) and DBspot (0.650: EN), which have comparable performance across languages. On the other hand, the highest $F_1$ scores for the Strict version are TagME (0.857: EN) and Babelfy$_S$ (0.805: ES). In general, the $F_1$ scores for the Strict version were higher than those for the Relaxed version: investigating further, the GERBIL framework only considers annotations to be false positives when a different annotation is given in the labelled dataset for an overlapping position; hence fewer labels in the Strict dataset will imply fewer false positives overall, which seems to outweigh the effect of the additional true positives that the Relaxed version would generate. Comparing the best Strict/Relaxed results for each system, we can see that Babelfy$_R$, DBspot and FREME have less of a gap between both, meaning that they tend to annotate a broader range of entities, while, in particular, Babelfy$_S$, AGDISTIS and THD are more restrictive in the types of entities that they link.
+With respect to \textbf{RQ1}, for the Relaxed version, the highest $F_1$ scores are obtained by Babelfy$_R$ (0.662: ES) and \textcolor{red}{\st{DBspot}} \textcolor{blue}{DBpedia Spotlight} (0.650: EN), which have comparable performance across languages. On the other hand, the highest $F_1$ scores for the Strict version are TagME (0.857: EN) and Babelfy$_S$ (0.805: ES). In general, the $F_1$ scores for the Strict version were higher than those for the Relaxed version: investigating further, the GERBIL framework only considers annotations to be false positives when a different annotation is given in the labelled dataset for an overlapping position; hence fewer labels in the Strict dataset will imply fewer false positives overall, which seems to outweigh the effect of the additional true positives that the Relaxed version would generate. Comparing the best Strict/Relaxed results for each system, we can see that Babelfy$_R$, \textcolor{red}{\st{DBspot}} \textcolor{blue}{DBpedia Spotlight} and FREME have less of a gap between both, meaning that they tend to annotate a broader range of entities, while, in particular, Babelfy$_S$, \textcolor{red}{\st{AGDISTIS}} and THD are more restrictive in the types of entities that they link.
 
-With respect to \textbf{RQ2}, considering all systems, we can see a general trend that English had the best results overall, where it was always best for DBspot, FREME and TagME. For THD, German had higher precision, whereas English had higher recall. On the other hand, Babelfy generally had best results in German and Spanish, often having the \textit{lowest} precision in English, while AGDISTIS seems to favour Italian for the relaxed dataset. There are variations between languages that may make the EL task easier or harder depending on the features used; for example, systems that rely on capitalization may perform differently for Spanish, which uses less capitalization, (e.g., ``\textit{Jungla de cristal}'': a Spanish movie title in sentence case); and German, where all nouns are capitalized.
+With respect to \textbf{RQ2}, considering all systems, we can see a general trend that English had the best results overall, where it was always best for \textcolor{red}{\st{DBspot}} \textcolor{blue}{DBpedia Spotlight}, FREME and TagME. For THD, German had higher precision, whereas English had higher recall. On the other hand, Babelfy generally had best results in German and Spanish, often having the \textit{lowest} precision in English\textcolor{red}{\st{, while AGDISTIS seems to favour Italian for the relaxed dataset}}. There are variations between languages that may make the EL task easier or harder depending on the features used; for example, systems that rely on capitalization may perform differently for Spanish, which uses less capitalization, (e.g., ``\textit{Jungla de cristal}'': a Spanish movie title in sentence case); and German, where all nouns are capitalized.
 \medskip
 
 Regarding \textbf{RQ3}, we will require another experiment to address the question of the efficacy of using machine translations. First we note that, although works in related areas -- such as cross-lingual ontology matching~\cite{FuBO10} -- have used machine translation to adapt to multilingual settings, to the best of our knowledge, no system listed in Table~\ref{tab:multilingual_approaches} uses machine translations over the input text (though systems such as Babelfy do use machine translations to enrich the lexical knowledge available in the KB). Hence we check to see if translating a text to English using a state-of-the-art approach -- Google Translate\footnote{\url{https://translate.google.com/}; April 1st, 2018} -- and applying EL over the translated English text would fare better than applying EL directly over the target language; we choose one target language to avoid generating results for a quadratic pairing of languages, and we choose English since it was the only language working for/supported by all systems in Table~\ref{tab:gerbil}.
@@ -477,13 +475,13 @@ To give a better impression of the results obtained from the second experiment, 
 \section{Conclusion}
 \label{sec:conclusion}
 
-While Entity Linking has traditionally focused on processing texts in English, in recent years there has been a growing trend towards developing techniques and systems that can support multiple languages. To support such research, in this paper we have described a new labeled dataset for multilingual EL, which we call \textsc{VoxEL}. The dataset contains 15 new articles in 5 different languages with 2 different criteria for labeling, resulting in a corpus of 150 manually-annotated news articles. In a Strict version of the dataset considering a core of entities, we derive 204 annotated mentions in each languages, while in a Relaxed version of the dataset considering a broader range of entities described by Wikipedia, we derive 674 annotated mentions in each language. The \textsc{VoxEL} dataset is distinguished by being based on texts translated by experts, having a one-to-one correspondence of sentences -- and annotated entities per sentence -- between languages. The dataset (in NIF) is available online under a CC-BY 4.0 licence: \url{https://dx.doi.org/10.6084/m9.figshare.6104759}.
+While Entity Linking has traditionally focused on processing texts in English, in recent years there has been a growing trend towards developing techniques and systems that can support multiple languages. To support such research, in this paper we have described a new labeled dataset for multilingual EL, which we call \textsc{VoxEL}. The dataset contains 15 new articles in 5 different languages with 2 different criteria for labeling, resulting in a corpus of 150 manually-annotated news articles. In a Strict version of the dataset considering a core of entities, we derive 204 annotated mentions in each language, while in a Relaxed version of the dataset considering a broader range of entities described by Wikipedia, we derive 674 annotated mentions in each language. The \textsc{VoxEL} dataset is distinguished by being based on texts translated by experts, having a one-to-one correspondence of sentences -- and annotated entities per sentence -- between languages. The dataset (in NIF) is available online under a CC-BY 4.0 licence: \url{https://dx.doi.org/10.6084/m9.figshare.6104759}.
 
 We used the \textsc{VoxEL} dataset to conduct experiments comparing the performance of selected EL systems in a multilingual setting. We found that in general, Babelfy and DBpedia Spotlight performed the most consistently across languages. We also found that with the exception of Babelfy, EL systems performed best over English versions of the text. Next, we compared configuring the multilingual EL system for each non-English language versus applying a machine translation of the text to English and running the system in English; with the exception of Babelfy, we found that the machine translation approach outperformed configuring the system for a non-English language; even in the case of Babelfy, the translation sometimes performed better, while in others it remained competitive. This raises a key issue for research on multilingual EL: state-of-the-art machine translation is now reaching a point where we must ask if it is worth building dedicated multilingual EL systems, or if we should focus on EL for one language to which other languages can be machine translated. 
 
 
-%{\footnotesize
-%\paragraph{Acknowledgements} The work of Henry Rosales-M\'endez was supported by CONICYT-PCHA/Doctorado Nacional/2016-21160017. The work was also supported by the Millennium Nucleus Center for Semantic Web Research under Grant NC120004. We would like to thank Michael R\"oder for his considerable help regarding GERBIL.}
+{\footnotesize
+\paragraph{Acknowledgements} The work of Henry Rosales-M\'endez was supported by CONICYT-PCHA/Doctorado Nacional/2016-21160017. The work was also supported by the Millennium Nucleus Center for Semantic Web Research under Grant NC120004. We would like to thank Michael R\"oder for his considerable help regarding GERBIL.}
 
 %
 % ---- Bibliography ----
